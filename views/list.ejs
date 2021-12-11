@@ -12,6 +12,7 @@
                   <p><%= newAdds[i].name %></p> 
             </div>
          <% } %> -->
+<<<<<<< HEAD
 
        
              
@@ -27,6 +28,16 @@
       <%   }) %>
     
          <form  action="/" method="post" class="item">
+=======
+      <%   newAdds.forEach(function(newadd){ %>
+            <div class="item">
+                <input type="checkbox">
+                  <p><%= newadd.name %></p> 
+            </div>
+        <%  }) %>
+
+         <form action="/" method="post" class="item">
+>>>>>>> 632a5a753cb2f274da880e3ab801c61153067d7a
             <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
             <button type="submit" name="list" value="<%=listTitle%>">+</button>
            
